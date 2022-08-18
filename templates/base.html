@@ -19,7 +19,7 @@
     <script async="" src="{% static 'analytics.js' %}"></script>
 	<header id="header" class="">
 		<div class="container">
-			<div class="logo"><img src="{% static 'a-logo.png' %}" width="30" height="30"></div>
+			<div class="logo"><a href="{% url 'index' %}"><img src="{% static 'a-logo.png' %}" width="30" height="30"></a></div>
 			<a class="slogan download-button no-phone button-sm bg-gradient d-none" href="{% url 'index' %}">Home</a>
 		</div>
 	</header>

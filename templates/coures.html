@@ -3,28 +3,6 @@
 {% block content %}
 
 <div class="container">
-    <div class="pt-70 relative" style="text-align: center">
-        <div class="download-container">
-            <a class="button bg-gradient" id="download-button"><img class="windows-icon" src="{% static 'windows.svg' %}">Courses<img class="arrow-icon" src="{% static 'arrow.svg' %}"></a>
-            <div id="download-links" class="popover">
-                <div class="pt-25"><a href="{% url 'courses' %}">Python Programming</a></div>
-                <div class="pt-25"><a href="{% url 'courses' %}">Django (Rest Framework)</a></div>
-                <div class="pt-25"><a href="{% url 'courses' %}">Data Science</a></div>
-            </div>
-        </div>
-    </div>
-    <section class="pt-200 text-center">
-        <h1>Python & Django</h1>
-        <h1>Data Science  &<br class="phone-only"> Machine Learning</h1>
-        <h2>Bootcamps<br>Paid and Free.</h2>
-        <div class="phone-only text-muted">Our mobile app will be available to you soon.</div>
-    </section>
-
-    <section class="pt-130 pt-phone-100">
-        <img src="{% static 'details-pic-3.png' %}">
-    </section>
-
-
     <section id="cards" class="pt-130 pt-mobile-60">
         <div class="row">
             <div class="col-md-6">
@@ -63,113 +41,7 @@
             </div>
         </div>
     </section>
-
-    <section id="testimonials" class="pt-200 text-center">
-        <div class="h2">Commints<br>5,000+ people</div>
-        <div id="testimonials-content" class="pt-70 pt-phone-40 testimonials-content">
-            <div class="testimonials-row" style="width: 1316px;">
-                <div class="testimonial-item"><img src="{% static 'comment-filled.svg' %}">“Lorem ipsum dolor, sit amet consectetur adipisicing elit.”</div>
-                <div class="testimonial-item bg-gradient"><img src=".{% static 'comment.svg' %}">“sit amet consectetur adipisicing elit.”</div>
-                <div class="testimonial-item"><img src="{% static 'comment.svg' %}">“Lorem ipsum dolor, adipisicing elit.”</div>
-                <div class="testimonial-item bg-gradient"><img src="{% static 'comment-filled.svg' %}">“Lorem ipsum dolor”</div>
-            </div>
-            <div class="testimonials-row" style="width: 1316px;">
-                <div class="testimonial-item bg-gradient"><img src="{% static 'comment.svg' %}">“Lorem ipsum dolor, sit amet elit.”</div>
-                <div class="testimonial-item"><img src="{% static 'comment-filled.svg' %}">“sit amet consectetur adipisicing elit.”</div>
-                <div class="testimonial-item bg-gradient"><img src="{% static 'comment.svg' %}">“Lorem ipsum dolor, sit amet consectetur adipisicing elit.”</div>
-                <div class="testimonial-item"><img src="{% static 'comment.svg' %}">“Lorem ipsum dolor, sit amet.”</div>
-            </div>
-            <div class="testimonials-row" style="width: 1316px;">
-                <div class="testimonial-item"><img src="{% static 'comment.svg' %}">“Lorem adipisicing elit.”</div>
-                <div class="testimonial-item bg-gradient"><img src="{% static 'comment.svg' %}">“Lorem ipsum dolor elit.”</div>
-                <div class="testimonial-item"><img src="{% static 'comment-filled.svg' %}">“Lorem ipsum dolor, sit amet consectetur.”</div>
-                <div class="testimonial-item bg-gradient"><img src="{% static 'comment-filled.svg' %}">“Lorem adipisicing elit.”</div>
-            </div>
-        </div>
-        <div class="background-left"></div>
-        <div class="background-right"></div>
-    </section>
-
-    <section id="mobile-info" class="desktop pt-200">
-        <div class="text-center h2">Mobile App Soon</div>
-        <div class="text-center h3 pt-30 pb-70">Data Science and Machine Learning Bootcamp.</div>
-        <div class="card bg-gradient pb-0">
-            <div class="row pt-40">
-                <div class="col-md-6"><img class="ml-60 device" src="{% static 'SM-pnone.png' %}"></div>
-                <div class="col-md-6">
-                    <div class="mobile-info-content">
-                        <div class="mobile-info-check pt-50"><img class="pr-25" src="{% static 'check.svg' %}">Learning</div>
-                        <div class="mobile-info-check pt-25"><img class="pr-25" src="{% static 'check.svg' %}">Practicum</div>
-                        <div class="mobile-info-check pt-25"><img class="pr-25" src=".{% static 'check.svg' %}">Become an expert</div>
-                        <div class="row pt-100">
-                            <div class="col-md-6">
-                                <div class="buttons">
-                                    <a href="" target="_blank">
-                                        <img class="none-hover" src="{% static 'app-store.svg' %}">
-                                        <img class="d-none hover" src="{% static 'app-store1.svg' %}">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="buttons">
-                                    <a href="" target="_blank">
-                                        <img class="none-hover" src="{% static 'g-play.svg' %}">
-                                        <img class="d-none hover" src="{% static 'g-play1.svg' %}">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="mobile-info" class="mobile pt-200">
-        <div class="text-center h2">Mobile App Soon</div>
-        <div class="text-center h3 pt-30 pb-70 pt-phone-20 pb-phone-50">Data Science and Machine Learning Bootcamp.</div>
-        <div class="card bg-gradient pb-0">
-            <div class="row">
-                <div class="pl-25 pl-phone-0">
-                    <div class="mobile-info-check">
-                        <img class="pr-25 no-phone" src="{% static 'check.svg' %}">
-                        <img class="pr-25 phone-only" src="{% static 'check-mobile.svg' %}">
-                        Learning
-                    </div>
-                    <div class="mobile-info-check pt-25 pt-phone-12">
-                        <img class="pr-25 no-phone" src="{% static 'check.svg' %}">
-                        <img class="pr-25 phone-only" src="{% static 'check-mobile.svg' %}">
-                        Practicum
-                    </div>
-                    <div class="mobile-info-check pt-25 pt-phone-12">
-                        <img class="pr-25 no-phone" src="{% static 'check.svg' %}">
-                        <img class="pr-25 phone-only" src="{% static 'check-mobile.svg' %}">
-                        Become an expert
-                    </div>
-                    <div class="row-sm pt-60 pt-phone-30">
-                        <div class="col-sm-6">
-                            <div class="buttons">
-                                <a href="" target="_blank">
-                                    <img class="none-hover" src="{% static 'app-store.svg' %}">
-                                    <img class="d-none hover" src="{% static 'app-store1.svg' %}">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="buttons">
-                                <a href="" target="_blank">
-                                    <img class="none-hover" src="{% static 'g-play.svg' %}">
-                                    <img class="d-none hover" src="{% static 'g-play1.svg' %}">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center pt-88 pt-phone-40"><img class="device" src="{% static 'SM-pnone.png' %}"></div>
-            </div>
-        </div>
-    </section>
-    <footer id="mobile-info" class="pt-130 pb-20 pt-phone-50">
+        <footer id="mobile-info" class="pt-130 pb-20 pt-phone-50">
     <div class="row">
         <div class="col-md-6 social mobile">
             <a class="pl-25" href="" target="_blank">
